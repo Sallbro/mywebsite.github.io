@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>banner</title>
+<link rel="stylesheet" href="banner.css">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<script>
+$(document).ready(function(){
+  $(".dropbtn i").click(function(){
+    $(".dropdown-content").toggleClass("block");
+  });
+    $(".dropbtn").on({
+    mouseenter: function(){
+      $(this).addClass("rotate");
+    },  
+    mouseleave: function(){
+      $(this).addClass("anrotate");
+    }
+	 });
+	/* $(".next i").click(function(){
+  $(".next").slideUp("slow");
+});
+*/
+});
+</script>
+<body>
+
+<div class="banner">
+<div id="header"><h1><b>Asu Salman</b></h1></div>
+<div class="dropdown">
+  <div class="dropbtn"><i class="fa fa-bars fa-1" aria-hidden="true"></i></div>
+  <div class="dropdown-content">
+    <a href="index.html"<a href="#home">Home</a></a>
+    <a href="about.html"<a href="#about">About</a></a>
+    <a href="contact.html"<a href="#contact">Contact</a></a>
+  </div>
+</div>
+</div>
+<div class="container">
+
+<div class="topic"><marquee width="15%" direction="left"><b>NATURE</b></marquee><br>BEAUTY:</div>
+
+<div class="slide">
+<img class="mh" src="images/nature-quotes-1557340276.jpg">
+<img class="mh" src="images/pexels-photo-257360.jpg">
+<img class="mh" src="images/road-1072823__340.jpg">
+</div>
+<div class="next"><a href="banner2.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+
+</div>
+</div>
+<div class="block"></div>
+<script>
+w3.slideshow(".mh", 1000);
+</script>
+</body>
+
+</html>                                             
